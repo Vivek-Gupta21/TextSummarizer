@@ -1,1 +1,281 @@
 [2024-04-26 17:57:36,474: INFO: main: Welcome to Custom Logging]
+[2024-09-04 13:35:53,354: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:35:53,355: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:35:53,355: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:35:53,355: INFO: common: created directory at: artifacts]
+[2024-09-04 13:35:53,355: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:36:00,435: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: F204:17DB7C:310D28:3D637A:66D814E2
+Accept-Ranges: bytes
+Date: Wed, 04 Sep 2024 08:05:57 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10224-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1725437155.920927,VS0,VE2646
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 1a56cdd226d42931a71c15cd90ad6c502a048b08
+Expires: Wed, 04 Sep 2024 08:10:57 GMT
+Source-Age: 2
+
+]
+[2024-09-04 13:36:00,435: ERROR: main: module 'zipfile' has no attribute 'ZipFiles']
+Traceback (most recent call last):
+  File "/Users/vivekgupta/DS/TextSummarizer/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/vivekgupta/DS/TextSummarizer/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/vivekgupta/DS/TextSummarizer/src/textSummarizer/components/data_ingestion.py", line 28, in extract_zip_file
+    with zipfile.ZipFiles(self.config.local_data_file, 'r') as zip_ref:
+AttributeError: module 'zipfile' has no attribute 'ZipFiles'
+[2024-09-04 13:37:49,422: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:37:49,423: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:37:49,423: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:37:49,423: INFO: common: created directory at: artifacts]
+[2024-09-04 13:37:49,424: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:37:49,424: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:37:49,505: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:37:49,505: INFO: main:  ##### Stage Data Validation Stage started #####]
+[2024-09-04 13:37:49,506: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:37:49,506: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:37:49,506: INFO: common: created directory at: artifacts]
+[2024-09-04 13:37:49,506: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:37:49,506: INFO: main:  #### Stage Data Validation Stage completed ####]
+[2024-09-04 13:43:12,794: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:43:12,795: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:43:12,796: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:43:12,796: INFO: common: created directory at: artifacts]
+[2024-09-04 13:43:12,796: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:43:12,796: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:43:12,890: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:43:12,890: INFO: main:  >>>>>>>>>>> Stage Data Validation Stage started <<<<<<<<<<<]
+[2024-09-04 13:43:12,891: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:43:12,891: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:43:12,891: INFO: common: created directory at: artifacts]
+[2024-09-04 13:43:12,891: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:43:12,891: INFO: main:  >>>>>>>>>>> Stage Data Validation Stage completed <<<<<<<<<<<]
+[2024-09-04 13:43:59,925: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:43:59,926: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:43:59,926: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:43:59,926: INFO: common: created directory at: artifacts]
+[2024-09-04 13:43:59,926: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:43:59,927: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:44:00,022: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:44:00,022: INFO: main:  --------------- Stage Data Validation Stage started ---------------]
+[2024-09-04 13:44:00,022: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:44:00,023: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:44:00,023: INFO: common: created directory at: artifacts]
+[2024-09-04 13:44:00,023: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:44:00,023: INFO: main: -------------- Stage Data Validation Stage completed <<<<<<<<<<<]
+[2024-09-04 13:44:10,764: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:44:10,765: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:44:10,767: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:44:10,767: INFO: common: created directory at: artifacts]
+[2024-09-04 13:44:10,767: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:44:10,767: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:44:10,853: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:44:10,853: INFO: main:  --------------- Stage Data Validation Stage started ---------------]
+[2024-09-04 13:44:10,853: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:44:10,854: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:44:10,854: INFO: common: created directory at: artifacts]
+[2024-09-04 13:44:10,854: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:44:10,854: INFO: main: -------------- Stage Data Validation Stage completed ---------------]
+[2024-09-04 13:44:13,720: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:44:13,721: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:44:13,721: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:44:13,721: INFO: common: created directory at: artifacts]
+[2024-09-04 13:44:13,721: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:44:13,721: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:44:13,804: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:44:13,804: INFO: main:  --------------- Stage Data Validation Stage started ---------------]
+[2024-09-04 13:44:13,805: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:44:13,805: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:44:13,805: INFO: common: created directory at: artifacts]
+[2024-09-04 13:44:13,805: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:44:13,805: INFO: main: -------------- Stage Data Validation Stage completed ---------------]
+[2024-09-04 13:44:35,849: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:44:35,850: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:44:35,850: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:44:35,850: INFO: common: created directory at: artifacts]
+[2024-09-04 13:44:35,850: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:44:35,850: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:44:35,929: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:44:35,929: INFO: main: 
+ --------------- Stage Data Validation Stage started ---------------]
+[2024-09-04 13:44:35,930: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:44:35,930: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:44:35,930: INFO: common: created directory at: artifacts]
+[2024-09-04 13:44:35,930: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:44:35,931: INFO: main: 
+ -------------- Stage Data Validation Stage completed ---------------]
+[2024-09-04 13:44:46,698: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:44:46,699: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:44:46,699: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:44:46,699: INFO: common: created directory at: artifacts]
+[2024-09-04 13:44:46,699: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:44:46,699: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:44:46,786: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:44:46,786: INFO: main: 
+
+ --------------- Stage Data Validation Stage started ---------------]
+[2024-09-04 13:44:46,787: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:44:46,787: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:44:46,787: INFO: common: created directory at: artifacts]
+[2024-09-04 13:44:46,787: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:44:46,788: INFO: main: 
+
+ -------------- Stage Data Validation Stage completed ---------------]
+[2024-09-04 13:45:00,866: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:45:00,867: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:45:00,868: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:45:00,868: INFO: common: created directory at: artifacts]
+[2024-09-04 13:45:00,868: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:45:00,868: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:45:00,954: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:45:00,954: INFO: main: 
+
+ --------------- Stage Data Validation Stage started ---------------]
+[2024-09-04 13:45:00,955: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:45:00,955: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:45:00,955: INFO: common: created directory at: artifacts]
+[2024-09-04 13:45:00,955: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:45:00,955: INFO: main:  -------------- Stage Data Validation Stage completed ---------------
+
+]
+[2024-09-04 13:45:03,078: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:45:03,079: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:45:03,080: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:45:03,080: INFO: common: created directory at: artifacts]
+[2024-09-04 13:45:03,080: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:45:03,080: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:45:03,165: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:45:03,165: INFO: main: 
+
+ --------------- Stage Data Validation Stage started ---------------]
+[2024-09-04 13:45:03,166: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:45:03,166: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:45:03,166: INFO: common: created directory at: artifacts]
+[2024-09-04 13:45:03,166: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:45:03,166: INFO: main:  -------------- Stage Data Validation Stage completed ---------------
+
+]
+[2024-09-04 13:45:11,294: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:45:11,295: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:45:11,295: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:45:11,295: INFO: common: created directory at: artifacts]
+[2024-09-04 13:45:11,295: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:45:11,295: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:45:11,374: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:45:11,374: INFO: main: 
+
+ --------------- Stage Data Validation Stage started ---------------]
+[2024-09-04 13:45:11,374: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:45:11,375: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:45:11,375: INFO: common: created directory at: artifacts]
+[2024-09-04 13:45:11,375: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:45:11,375: INFO: main: 
+ -------------- Stage Data Validation Stage completed ---------------
+
+]
+[2024-09-04 13:45:53,224: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:45:53,225: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:45:53,226: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:45:53,226: INFO: common: created directory at: artifacts]
+[2024-09-04 13:45:53,226: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:45:53,226: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:45:53,315: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:45:53,315: INFO: main: 
+
+ --------------- Data Validation Stage started ---------------]
+[2024-09-04 13:45:53,316: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:45:53,316: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:45:53,316: INFO: common: created directory at: artifacts]
+[2024-09-04 13:45:53,316: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:45:53,316: INFO: main: 
+ -------------- Data Validation Stage completed ---------------
+
+]
+[2024-09-04 13:48:49,369: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:48:49,370: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:48:49,370: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:48:49,370: INFO: common: created directory at: artifacts]
+[2024-09-04 13:48:49,370: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:48:49,370: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:48:49,465: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:48:49,465: INFO: main: 
+
+ --------------- Data Validation Stage started ---------------]
+[2024-09-04 13:48:49,466: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:48:49,466: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:48:49,466: INFO: common: created directory at: artifacts]
+[2024-09-04 13:48:49,466: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:48:49,466: INFO: main: 
+ -------------- Data Validation Stage completed ---------------
+
+]
+[2024-09-04 13:52:13,547: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:52:13,548: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:52:13,549: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:52:13,549: INFO: common: created directory at: artifacts]
+[2024-09-04 13:52:13,549: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:52:13,549: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:52:13,640: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:52:13,640: INFO: main: 
+
+ --------------- Data Validation Stage started ---------------]
+[2024-09-04 13:52:13,641: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:52:13,641: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:52:13,641: INFO: common: created directory at: artifacts]
+[2024-09-04 13:52:13,641: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:52:13,641: INFO: main: 
+ -------------- Data Validation Stage completed ---------------
+
+]
+[2024-09-04 13:52:51,233: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:52:51,234: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:52:51,235: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:52:51,235: INFO: common: created directory at: artifacts]
+[2024-09-04 13:52:51,235: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:52:51,235: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:52:51,326: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:52:51,326: INFO: main: 
+
+ --------------- Data Validation Stage started ---------------]
+[2024-09-04 13:52:51,327: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:52:51,327: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:52:51,327: INFO: common: created directory at: artifacts]
+[2024-09-04 13:52:51,327: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:52:51,328: INFO: main: 
+ -------------- Data Validation Stage completed ---------------
+
+]
+[2024-09-04 13:55:05,538: INFO: main:  ##### Stage Data Ingestion Stage started #####]
+[2024-09-04 13:55:05,539: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:55:05,540: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:55:05,540: INFO: common: created directory at: artifacts]
+[2024-09-04 13:55:05,540: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-04 13:55:05,540: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-09-04 13:55:05,635: INFO: main:  #### Stage Data Ingestion Stage completed ####]
+[2024-09-04 13:55:05,635: INFO: main: 
+
+ --------------- Data Validation Stage started ---------------]
+[2024-09-04 13:55:05,636: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-04 13:55:05,636: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-04 13:55:05,636: INFO: common: created directory at: artifacts]
+[2024-09-04 13:55:05,636: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-04 13:55:05,636: INFO: main: 
+ -------------- Data Validation Stage completed ---------------
+
+]
